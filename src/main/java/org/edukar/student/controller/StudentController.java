@@ -5,7 +5,9 @@ import org.edukar.student.model.Student;
 import org.edukar.student.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,8 +26,19 @@ public class StudentController {
 		return studentService.saveRecord(studentDto);
 	}
 	
+	@PatchMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public Integer patchStudent(@PathVariable(required = true, name = "id") Integer id, @RequestBody StudentDto studentDto) throws Exception {
+		return studentService.patchRecord(id, studentDto);
+	}
+	
 	@GetMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public Student getStudent(@PathVariable(required = true, name = "id") Integer id) {
 		return studentService.getRecord(id);
+	}
+	
+	@DeleteMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+	public String deleteStudent(@PathVariable(required = true, name = "id") Integer id) {
+		studentService.deleteRecord(id);
+		return "Deleted";
 	}
 }

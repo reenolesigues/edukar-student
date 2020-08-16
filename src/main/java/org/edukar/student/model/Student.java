@@ -1,8 +1,10 @@
 package org.edukar.student.model;
 
-import java.util.GregorianCalendar;
+import java.sql.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -29,8 +31,8 @@ public class Student {
 	private String lastName;
 	private String nameExtension;
 	
-	private Character sex;
-	private GregorianCalendar birthday;
+	private char sex;
+	private Date birthday;
 	private Integer age;
 	
 	private String religiousAffiliation;
@@ -47,6 +49,6 @@ public class Student {
 	private String guardianRelationship;
 	private String relativeContactNumber;
 	
-	@OneToOne(mappedBy = "student")
+	@OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "student")
 	private StudentRemark studentRemark; 
 }

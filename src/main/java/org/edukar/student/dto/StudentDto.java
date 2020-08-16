@@ -1,6 +1,6 @@
 package org.edukar.student.dto;
 
-import java.util.GregorianCalendar;
+import java.sql.Date;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,8 +14,8 @@ public class StudentDto {
 	private String lastName;
 	private String nameExtension;
 	
-	private Character sex;
-	private GregorianCalendar birthday;
+	private char sex;
+	private Date birthday;
 	private Integer age;
 	
 	private String religiousAffiliation;
