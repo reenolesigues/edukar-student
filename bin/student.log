@@ -1,0 +1,48 @@
+2020-08-15 20:44:15.820  INFO 10471 --- [main] o.e.student.EdukarStudentApplication     : Starting EdukarStudentApplication on renlei-localhost with PID 10471 (/home/renlei/Documents/workspace-spring/edukar-student/bin/main started by renlei in /home/renlei/Documents/workspace-spring/edukar-student)
+2020-08-15 20:44:15.823  INFO 10471 --- [main] o.e.student.EdukarStudentApplication     : No active profile set, falling back to default profiles: default
+2020-08-15 20:44:16.356  INFO 10471 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-15 20:44:16.361  INFO 10471 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-15 20:44:16.362  INFO 10471 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-15 20:44:16.401  INFO 10471 --- [main] o.a.c.c.C.[.[localhost].[/student]       : Initializing Spring embedded WebApplicationContext
+2020-08-15 20:44:16.401  INFO 10471 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 533 ms
+2020-08-15 20:44:16.424  INFO 10471 --- [main] o.e.student.EdukarStudentApplication     : Hello Reeno!
+2020-08-15 20:44:16.522  INFO 10471 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-15 20:44:16.645  INFO 10471 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/student'
+2020-08-15 20:44:16.655  INFO 10471 --- [main] o.e.student.EdukarStudentApplication     : Started EdukarStudentApplication in 1.172 seconds (JVM running for 1.725)
+2020-08-15 20:44:19.471  INFO 10471 --- [http-nio-8088-exec-2] o.a.c.c.C.[.[localhost].[/student]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-15 20:44:19.472  INFO 10471 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-15 20:44:19.484  INFO 10471 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-08-15 20:44:24.014  INFO 10471 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-15 20:44:24.045  INFO 10471 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-15 20:47:20.561  INFO 10846 --- [main] o.e.student.EdukarStudentApplication     : Starting EdukarStudentApplication on renlei-localhost with PID 10846 (/home/renlei/Documents/workspace-spring/edukar-student/bin/main started by renlei in /home/renlei/Documents/workspace-spring/edukar-student)
+2020-08-15 20:47:20.569  INFO 10846 --- [main] o.e.student.EdukarStudentApplication     : No active profile set, falling back to default profiles: default
+2020-08-15 20:47:21.144  INFO 10846 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-15 20:47:21.150  INFO 10846 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-15 20:47:21.150  INFO 10846 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-15 20:47:21.188  INFO 10846 --- [main] o.a.c.c.C.[.[localhost].[/student]       : Initializing Spring embedded WebApplicationContext
+2020-08-15 20:47:21.188  INFO 10846 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 588 ms
+2020-08-15 20:47:21.213  INFO 10846 --- [main] o.e.student.EdukarStudentApplication     : Hello Reeno!
+2020-08-15 20:47:21.305  INFO 10846 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-15 20:47:21.438  INFO 10846 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/student'
+2020-08-15 20:47:21.449  INFO 10846 --- [main] o.e.student.EdukarStudentApplication     : Started EdukarStudentApplication in 1.163 seconds (JVM running for 1.786)
+2020-08-15 20:47:36.052  INFO 10846 --- [http-nio-8088-exec-2] o.a.c.c.C.[.[localhost].[/student]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-15 20:47:36.052  INFO 10846 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-15 20:47:36.057  INFO 10846 --- [http-nio-8088-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-08-15 20:47:45.264  INFO 10846 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-08-15 20:47:45.284  INFO 10846 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-15 20:49:34.853  INFO 11096 --- [main] o.e.student.EdukarStudentApplication     : Starting EdukarStudentApplication on renlei-localhost with PID 11096 (/home/renlei/Documents/workspace-spring/edukar-student/build/classes/java/main started by renlei in /home/renlei/Documents/workspace-spring/edukar-student)
+2020-08-15 20:49:34.856  INFO 11096 --- [main] o.e.student.EdukarStudentApplication     : No active profile set, falling back to default profiles: default
+2020-08-15 20:49:35.869  INFO 11096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2020-08-15 20:49:35.879  INFO 11096 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-08-15 20:49:35.880  INFO 11096 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-15 20:49:35.939  INFO 11096 --- [main] o.a.c.c.C.[.[localhost].[/student]       : Initializing Spring embedded WebApplicationContext
+2020-08-15 20:49:35.939  INFO 11096 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1033 ms
+2020-08-15 20:49:36.123  INFO 11096 --- [main] o.e.student.EdukarStudentApplication     : Hello Reeno!
+2020-08-15 20:49:36.337  INFO 11096 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-15 20:49:36.530  INFO 11096 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-15 20:49:36.561  INFO 11096 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/student'
+2020-08-15 20:49:36.573  INFO 11096 --- [main] o.e.student.EdukarStudentApplication     : Started EdukarStudentApplication in 2.121 seconds (JVM running for 2.571)
+2020-08-15 20:49:41.218  INFO 11096 --- [http-nio-8088-exec-1] o.a.c.c.C.[.[localhost].[/student]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-15 20:49:41.225  INFO 11096 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-08-15 20:49:41.234  INFO 11096 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-08-15 20:49:50.759  INFO 11096 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

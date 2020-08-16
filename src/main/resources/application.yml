@@ -1,0 +1,24 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /student
+logging:
+  level:
+    root: INFO
+    
+spring:
+  jpa:
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+      
+  datasource:
+    url: jdbc:postgresql://localhost:5432/edukar
+    username: reenolesigues
+    password: Lorenzolei3+
+    initialization-mode: always
+    
+    schema:
+    - classpath:schema.sql
