@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -13,14 +14,14 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "Student", schema = "edukar")
+@Table(name = "Student", schema = "edukar_student")
 @Getter
 @Setter
 public class Student {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "StudentIDGenerator")
-	@SequenceGenerator(name = "StudentIDGenerator", sequenceName = "edukar.student_id_sequence")
+	@SequenceGenerator(name = "StudentIDGenerator", sequenceName = "edukar_student.student_id_sequence")
 	private Integer id;
 	
 	private String firstName;
@@ -45,4 +46,7 @@ public class Student {
 	private String guardianFullName;
 	private String guardianRelationship;
 	private String relativeContactNumber;
+	
+	@OneToOne(mappedBy = "student")
+	private StudentRemark studentRemark; 
 }
