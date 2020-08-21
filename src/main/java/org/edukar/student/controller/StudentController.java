@@ -22,12 +22,12 @@ public class StudentController {
 	private StudentService studentService;
 	
 	@PostMapping(path = "/", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-	public Integer postStudent(@RequestBody StudentDto studentDto) {
+	public Student postStudent(@RequestBody StudentDto studentDto) {
 		return studentService.saveRecord(studentDto);
 	}
 	
 	@PatchMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public Integer patchStudent(@PathVariable(required = true, name = "id") Integer id, @RequestBody StudentDto studentDto) throws Exception {
+	public Student patchStudent(@PathVariable(required = true, name = "id") Integer id, @RequestBody StudentDto studentDto) throws Exception {
 		return studentService.patchRecord(id, studentDto);
 	}
 	
@@ -37,8 +37,7 @@ public class StudentController {
 	}
 	
 	@DeleteMapping(path = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-	public String deleteStudent(@PathVariable(required = true, name = "id") Integer id) {
+	public void deleteStudent(@PathVariable(required = true, name = "id") Integer id) {
 		studentService.deleteRecord(id);
-		return "Deleted";
 	}
 }

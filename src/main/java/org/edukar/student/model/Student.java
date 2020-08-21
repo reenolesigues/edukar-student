@@ -48,7 +48,28 @@ public class Student {
 	private String guardianFullName;
 	private String guardianRelationship;
 	private String relativeContactNumber;
+	private String remarks;
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", firstName=" + firstName + ", middleName=" + middleName + ", lastName="
+				+ lastName + ", nameExtension=" + nameExtension + ", sex=" + sex + ", birthday=" + birthday + ", age="
+				+ age + ", religiousAffiliation=" + religiousAffiliation + ", houseNumber=" + houseNumber + ", street="
+				+ street + ", barangay=" + barangay + ", municiality=" + municiality + ", province=" + province
+				+ ", fatherFullName=" + fatherFullName + ", motherFullMaidenName=" + motherFullMaidenName
+				+ ", guardianFullName=" + guardianFullName + ", guardianRelationship=" + guardianRelationship
+				+ ", relativeContactNumber=" + relativeContactNumber + ", remarks=" + remarks + ", getId()=" + getId()
+				+ ", getFirstName()=" + getFirstName() + ", getMiddleName()=" + getMiddleName() + ", getLastName()="
+				+ getLastName() + ", getNameExtension()=" + getNameExtension() + ", getSex()=" + getSex()
+				+ ", getBirthday()=" + getBirthday() + ", getAge()=" + getAge() + ", getReligiousAffiliation()="
+				+ getReligiousAffiliation() + ", getHouseNumber()=" + getHouseNumber() + ", getStreet()=" + getStreet()
+				+ ", getBarangay()=" + getBarangay() + ", getMuniciality()=" + getMuniciality() + ", getProvince()="
+				+ getProvince() + ", getFatherFullName()=" + getFatherFullName() + ", getMotherFullMaidenName()="
+				+ getMotherFullMaidenName() + ", getGuardianFullName()=" + getGuardianFullName()
+				+ ", getGuardianRelationship()=" + getGuardianRelationship() + ", getRelativeContactNumber()="
+				+ getRelativeContactNumber() + ", getRemarks()=" + getRemarks() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	}
 	
-	@OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "student")
-	private StudentRemark studentRemark; 
+//	@OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "student")
+//	private StudentRemark studentRemark; 
 }

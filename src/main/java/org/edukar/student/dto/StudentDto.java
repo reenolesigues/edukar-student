@@ -32,8 +32,5 @@ public class StudentDto {
 	private String guardianRelationship;
 	private String relativeContactNumber;
 	
-	private String indicator;
-	private String code;
-	private String requiredInformation;
-	
+	private String remarks;	
 }
